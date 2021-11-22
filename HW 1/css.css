@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.list {
+    display: flex;
+    text-decoration: dashed;
+    list-style-type: none;
+    font-size: 20   px;
+}
+li{
+    margin-right: 18px;
+}
+.btn {
+    border: 1px solid #35ce97;
+    border-radius: 88px;
+    padding: 8px 12px;
+    background-color: white;
+    color: #35ce97;
+    cursor: pointer;
+}
+.list__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
