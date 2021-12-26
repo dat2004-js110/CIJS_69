@@ -27,8 +27,8 @@ class App {
         // } else {
           const loginScreen = new Login();
           this.setActiveScreen(loginScreen);
-        }
-      );
+        })
+      // });
     }
   
     setActiveScreen(screen) {
