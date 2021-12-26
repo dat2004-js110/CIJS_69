@@ -1,7 +1,7 @@
 import { signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-auth.js";
-import { auth } from "../constants/index.js";
+import { auth } from "./index.js";
 import Register from "./Register.js";
-import app from "../index.js";
+import app from "./index.js";
 
 
 export default class Login {
@@ -71,4 +71,3 @@ export default class Login {
         container.appendChild(this.$formEl);
       }
 }
-export default Login;

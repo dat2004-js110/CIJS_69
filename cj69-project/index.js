@@ -1,6 +1,13 @@
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-auth.js";
-import Login from "./components/Login.js";
-import { auth } from "./constants/index.js";
+import { getAuth } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-auth.js";
+import {
+  getFirestore,
+  collection,
+} from "https://www.gstatic.com/firebasejs/9.5.0/firebase-firestore.js";
+
+export const auth = getAuth();
+export const db = getFirestore();
+
 
 
 class App {
