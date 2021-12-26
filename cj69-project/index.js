@@ -1,9 +1,9 @@
-import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-auth.js";
-import { getAuth } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-auth.js";
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
+import { getAuth } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
 import {
   getFirestore,
   collection,
-} from "https://www.gstatic.com/firebasejs/9.5.0/firebase-firestore.js";
+} from "https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js";
 
 export const auth = getAuth();
 export const db = getFirestore();
@@ -21,14 +21,14 @@ class App {
   
     setupAuthenticationListener() {
       onAuthStateChanged(auth, (user) => {
-        if (user) {
-          const mainScreen = new Main();
-          this.setActiveScreen(mainScreen);
-        } else {
+        // if (user) {
+        //   const mainScreen = new Main();
+        //   this.setActiveScreen(mainScreen);
+        // } else {
           const loginScreen = new Login();
           this.setActiveScreen(loginScreen);
         }
-      });
+      );
     }
   
     setActiveScreen(screen) {

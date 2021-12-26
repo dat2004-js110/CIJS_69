@@ -2,7 +2,7 @@ import {
     createUserWithEmailAndPassword,
     updateProfile,
     sendEmailVerification,
-  } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-auth.js";
+  } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
   import { auth } from "./index.js";
   import Login from "./Login.js";
   import app from "./index.js";
