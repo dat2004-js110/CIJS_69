@@ -8,7 +8,7 @@ import {
 export const auth = getAuth();
 export const db = getFirestore();
 
-
+import Login from "./Login.js";
 
 class App {
     activeScreen;

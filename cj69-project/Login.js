@@ -2,6 +2,7 @@ import { signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9
 import { auth } from "./index.js";
 import Register from "./Register.js";
 import app from "./index.js";
+import InputGroup from "./InputGroup.js";
 
 
 export default class Login {
@@ -33,6 +34,7 @@ export default class Login {
 
         this.$goToRegister = document.createElement("p");
         this.$goToRegister.textContent = "Go to Register page"; 
+        this.$goToRegister.setAttribute("class", "text-white font-bold mt-2");
 
         this.$goToRegister.addEventListener("click", this.goToRegisterPage);
     }

@@ -6,6 +6,7 @@ import {
   import { auth } from "./index.js";
   import Login from "./Login.js";
   import app from "./index.js";
+  import InputGroup from "./InputGroup.js";
 
   class Register {
     $formEl;
